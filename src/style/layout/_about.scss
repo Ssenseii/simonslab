@@ -32,6 +32,10 @@
 
       width: 20%;
 
+      .meIcon {
+        display: none;
+      }
+
       p {
         font-size: 12px;
         font-weight: 600;
@@ -90,6 +94,8 @@
 
     &-links {
       width: 10%;
+      display: flex;
+      flex-direction: column;
 
       li {
         font-size: 14px;
@@ -133,7 +139,7 @@
       width: 30%;
       text-align: start;
     }
-    
+
     &-rights {
       opacity: 0.8;
       font-size: 10px;
@@ -141,7 +147,7 @@
       width: 30%;
       text-align: end;
     }
-    
+
     &-design {
       width: 40%;
       text-align: center;
@@ -149,3 +155,157 @@
 
   }
 }
+
+
+@media screen and (max-width: 1028px) {
+  .about {
+    &__lists {
+      &-links {
+        li {
+          .linker {
+            opacity: 1;
+            transform: translateX(0);
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .about {
+    &__header {
+      height: 30%;
+
+      &-card {
+        h1 {
+          font-size: 64px;
+          line-height: 64px;
+        }
+      }
+    }
+
+    &__lists {
+      height: 65%;
+
+      &-table {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        column-width: 10%;
+
+        width: 50%;
+
+        ul {
+
+          margin-right: 0;
+        }
+      }
+
+      &-links {
+        width: 20%;
+        align-items: flex-end;
+      }
+    }
+  }
+}
+
+
+@media screen and (max-width: 768px) {
+  .about {
+    padding: 1rem;
+    overflow: hidden;
+
+    &__header {
+      height: 20%;
+      padding-block: 1rem;
+      &-card {
+
+        h1 {
+          font-size: 32px;
+          line-height: 32px;
+          margin-bottom: 1rem;
+        }
+
+        p {
+          width: 40ch;
+          line-height: 12px;
+        }
+      }
+
+      &-close {
+
+        .meIcon{
+          display: block;
+          stroke: var(--color);
+        }
+        
+        p {
+          display: none;
+        }
+
+        &-underline {
+          display: none;
+        }
+      }
+    }
+
+    &__lists {
+      padding-block: 1rem;
+      height: 75%;
+      flex-direction: column;
+
+      &-table {
+        width: 100%;
+        flex-direction: column;
+
+        ul {
+          margin: 10%;
+          li {
+            line-height: 18px;
+          }
+        }
+      }
+
+      &-links {
+        width: 100%;
+        flex-direction: row;
+        justify-content: space-evenly;
+
+        li {
+
+          .linker {
+            opacity: 1;
+            transform: translateX(0px);
+          }
+
+        }
+      }
+    }
+
+
+    &__tags {
+      height: 5%;
+
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+
+      &-available {
+        display: none;
+      }
+
+      &-rights {
+        display: none;
+      }
+
+      &-design {
+        width: 100%;
+        text-align: center;
+        opacity: 0.3;
+      }
+    }
+  }
+
+}
+

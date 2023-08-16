@@ -1,9 +1,16 @@
 import React, { useEffect, useState } from "react";
-import { motion, AnimatePresence} from "framer-motion";
-import { ElementsData, Icon, GithubIcon, TwitterIcon, InstagramIcon, MeIcon} from "./data";
+import { motion, AnimatePresence } from "framer-motion";
+import {
+  ElementsData,
+  Icon,
+  GithubIcon,
+  TwitterIcon,
+  InstagramIcon,
+  MeIcon,
+  HomeIcon
+} from "./data";
 
 const About = ({ handleAbout }) => {
-  
   const handleToggleAbout = () => {
     handleAbout();
   };
@@ -31,6 +38,9 @@ const About = ({ handleAbout }) => {
         </div>
         <div className="about__header-close">
           <p onClick={handleToggleAbout}>CLOSE</p>
+          <div className="meIcon" onClick={handleToggleAbout}>
+            {HomeIcon}
+          </div>
           <div className="about__header-close-underline"></div>
         </div>
       </motion.div>
@@ -73,7 +83,6 @@ const About = ({ handleAbout }) => {
           </ul>
         </motion.div>
         <ul className="about__lists-links">
-
           <li>
             <a
               target="_blank"
@@ -279,7 +288,9 @@ const Header = ({ handleSlider, active, handleAbout }) => {
       </div>
       <div className="header__about">
         <p onClick={handleToggleAbout}>ABOUT</p>
-        <div className="meIcon" onClick={handleToggleAbout}>{MeIcon}</div>
+        <div className="meIcon" onClick={handleToggleAbout}>
+          {MeIcon}
+        </div>
         <div className="header__about-underline"></div>
       </div>
     </motion.nav>
