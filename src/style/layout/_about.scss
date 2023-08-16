@@ -1,0 +1,151 @@
+.about {
+  height: 100vh;
+  padding: 2rem;
+
+  overflow: hidden;
+
+  &__header {
+    height: 45%;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    &-card {
+      width: 50%;
+
+      h1 {
+        font-size: 125px;
+        line-height: 125px;
+      }
+
+      p {
+        width: 66ch;
+        line-height: 12px;
+      }
+    }
+
+    &-close {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-end;
+
+      width: 20%;
+
+      p {
+        font-size: 12px;
+        font-weight: 600;
+        color: var(--color);
+
+        &:hover {
+          cursor: pointer;
+        }
+      }
+
+      &-underline {
+        width: 2.2rem;
+        height: 2px;
+        background-color: var(--color);
+      }
+    }
+  }
+
+  &__lists {
+
+    height: 50%;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    &-table {
+      width: 90%;
+
+      display: flex;
+      flex-direction: row;
+
+      ul {
+        margin-right: 10%;
+
+        p {
+          margin-bottom: 12px;
+          font-size: 14px;
+        }
+
+        li {
+          font-size: 12px;
+          font-weight: 600;
+          color: var(--color);
+          line-height: 16px;
+          opacity: 0.8;
+          cursor: default;
+
+          &:hover {
+            cursor: default;
+            opacity: 1;
+          }
+        }
+      }
+    }
+
+    &-links {
+      width: 10%;
+
+      li {
+        font-size: 14px;
+        line-height: 28px;
+        font-weight: 600;
+        color: var(--color);
+        opacity: 0.8;
+
+        .linker {
+          opacity: 0;
+          transition: all 200ms ease;
+          transform: translateX(-10px);
+        }
+
+        &:hover {
+          opacity: 1;
+
+          .linker {
+            opacity: 1;
+            transform: translateX(0);
+            transition: all 200ms ease 300ms;
+          }
+        }
+      }
+    }
+  }
+
+
+  &__tags {
+    height: 5%;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+    &-available {
+      opacity: 0.8;
+      font-size: 10px;
+      line-height: 12px;
+      width: 30%;
+      text-align: start;
+    }
+    
+    &-rights {
+      opacity: 0.8;
+      font-size: 10px;
+      line-height: 12px;
+      width: 30%;
+      text-align: end;
+    }
+    
+    &-design {
+      width: 40%;
+      text-align: center;
+    }
+
+  }
+}

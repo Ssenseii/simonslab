@@ -1,0 +1,23 @@
+// @import 'abstracts/';
+@import 'abstracts/variables';
+@import 'abstracts/animations';
+@import 'abstracts/mixins';
+
+// @import 'vendors/';
+
+// @import 'base/';
+@import 'base/globals';
+
+// @import 'layout/';
+@import 'layout/about';
+@import 'layout/header';
+@import 'layout/main';
+@import 'layout/footer';
+
+// @import 'components/';
+@import 'components/explore';
+
+// @import 'pages/';
+@import 'pages/app';
+
+// @import 'themes/';

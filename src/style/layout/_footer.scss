@@ -1,0 +1,115 @@
+.footer {
+  height: 20%;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-end;
+
+  padding-block: 2rem;
+  padding-inline: 2rem;
+
+  &__email {
+    .linker {
+      opacity: 0;
+      transition: all 200ms ease;
+      transform: translateX(-10px);
+    }
+
+    &:hover {
+      .linker {
+        opacity: 1;
+        transform: translateX(0);
+        transition: all 200ms ease 300ms;
+      }
+    }
+
+  }
+
+  &__social {
+    ul {
+
+      .github {
+        display: none;
+      }
+
+      .twitter {
+        display: none;
+      }
+
+      .instagram {
+        display: none;
+      }
+
+      li {
+        font-size: 14px;
+        line-height: 16px;
+        font-weight: 600;
+        color: var(--color);
+
+
+        .linker {
+          opacity: 0;
+          transition: all 200ms ease;
+          transform: translateX(-10px);
+        }
+
+        &:hover {
+          .linker {
+            opacity: 1;
+            transform: translateX(0);
+            transition: all 200ms ease 300ms;
+          }
+        }
+      }
+    }
+  }
+}
+
+
+@media screen and (max-width: 768px) {
+  .footer {
+    height: 10%;
+    align-items: center;
+    padding: 1rem;
+
+
+
+    &__email {
+      width: 50%;
+      
+    }
+
+    &__social {
+      width: 50%;
+      display: flex;
+      justify-content: flex-end;
+      
+
+      ul {
+        display: flex;
+        flex-direction: row;
+
+        li {
+          display: none;
+        }
+
+        a {
+          margin-right: 8px;
+          &:last-child{
+            margin-right: 0;
+          }
+
+          svg {
+            fill: var(--color);
+          }
+
+        }
+
+        .github, .twitter, .instagram {
+          display: block;
+        }
+      }
+    }
+  }
+}

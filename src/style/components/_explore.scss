@@ -1,0 +1,158 @@
+.explore {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-end;
+
+  width: 50%;
+  height: 100%;
+  padding: 8px;
+
+  &__list {
+    width: 40%;
+    height: 80%;
+
+
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: flex-end;
+
+    ul {
+      font-size: 12px;
+      line-height: 14px;
+
+    }
+
+    &-order {
+      width: 20%;
+
+      li {
+        font-size: 9px;
+      }
+    }
+
+    &-title {
+      width: 50%;
+
+      li {
+        font-size: 10px;
+      }
+    }
+
+    &-data {
+      width: 50%;
+
+      li {
+        font-size: 10px;
+      }
+    }
+  }
+
+  &__action {
+
+    width: 20%;
+    height: 100%;
+
+    @include Center;
+
+    display: flex;
+    flex-direction: column;
+
+    &-hline {
+      width: 3.2rem;
+      height: 2px;
+      background-color: var(--color);
+
+      margin-bottom: 1rem;
+    }
+
+    &-vline {
+      height: 2rem;
+      width: 1px;
+      background-color: var(--color);
+
+      margin-bottom: 1rem;
+    }
+
+    &-icon {
+      position: relative;
+      width: 8px;
+      height: 8px;
+
+      @include Center;
+
+      &-v {
+        position: absolute;
+        width: 2px;
+        height: 8px;
+        border-radius: 2px;
+        background-color: var(--color);
+      }
+
+      &-h {
+        position: absolute;
+        height: 2px;
+        width: 8px;
+        border-radius: 2px;
+        background-color: var(--color);
+      }
+    }
+  }
+
+  &__description {
+
+    width: 40%;
+    height: 80%;
+
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+
+    p {
+      width: 60ch;
+      font-size: 10px;
+      line-height: 14px;
+    }
+  }
+}
+
+@media screen and (max-width: 1300px) {
+  .explore {
+
+    &__list {
+      width: 100%;
+      align-self: center;
+      justify-content: center;
+
+      &-order {
+        display: none;
+      }
+
+      &-title {
+        width: 30%;
+      }
+
+      &-data {
+        width: 30%;
+
+      }
+    }
+
+    &__action {
+      display: none;
+    }
+
+    &__description {
+      display: none;
+    }
+  }
+}
+
+
+@media screen and (max-width: 768px) {
+  .explore{
+    display: none;
+  }
+}
