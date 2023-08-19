@@ -10,6 +10,8 @@
   padding-inline: 2rem;
 
   &__email {
+    opacity: 0.9;
+    animation: rotateText 1s ease-out;
     .linker {
       opacity: 0;
       transition: all 200ms ease;
@@ -17,6 +19,7 @@
     }
 
     &:hover {
+      opacity: 1;
       .linker {
         opacity: 1;
         transform: translateX(0);
@@ -46,6 +49,8 @@
         line-height: 16px;
         font-weight: 600;
         color: var(--color);
+        opacity: 0.9;
+        animation: rotateText 1s ease-out;
 
 
         .linker {
@@ -55,6 +60,7 @@
         }
 
         &:hover {
+          opacity: 1;
           .linker {
             opacity: 1;
             transform: translateX(0);
@@ -77,6 +83,7 @@
 
     &__email {
       width: 50%;
+      opacity: 1;
       
     }
 
