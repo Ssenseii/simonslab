@@ -3,136 +3,145 @@ export const ElementsData = [
   {
     bgColor: "#20323f",
     elementColor: "#faffff",
-    completed: "MAY 2021",
-    type: "PHOTOGRAPHY",
-    role: "FRONTEND - MOTION",
-    client: "PAUL",
-  },
+    completed: "AUGUST 2023",
+    type: "PERSONAL",
+    role: "FULLSTACK",
+    client: " --- ",
+    description: "WORKING MODEL OF A SIMPLE TODO APP USING PIXEL ART GRAPHICS INSTEAD OF NORMAL CSS STYLING TO ACHIEVE A UNIQUE LOOK.",
 
-  {
-    bgColor: "#232128",
-    elementColor: "#efc068",
-    completed: "JUNE 2021",
-    type: "CUISINE",
-    role: "FRONTEND - MOTION",
-    client: "CHEF BOURDAIN",
-  },
+    // DETAILS
 
-  {
-    bgColor: "#f21365",
-    elementColor: "#00f0f1",
-    completed: "AUGUST 2021",
-    type: "ILLUSTRATIONS",
-    role: "FULLSTACK - MOTION",
-    client: "ME",
+    title: "PIXEL NOTES",
+    timespan: "3 DAYS",
+    tools: "REACT - ASEPRITE - FIGMA",
+    livesite: "https://pixel-notes.vercel.app/",
+    ideas: ["STRESS BUTTON", "PIXELART ANIMATIONS", "NOTIFICATIONS", "THEMES", "EDITABLE", "CUSTOMIZABLE"],
+    goals: ["ACHIEVE A PIXEL ART AESTHETIC IN A REACT APP WITHOUT WEBGL", "LEARN MORE ABOUT FIREBASE"],
+    execution: ["DESIGN THE LAYOUT IN FIGMA", "CREATE THE ASSETS IN ASEPRITE", "ESTABLISH THE LAYOUT IN REACT", "ADD FUNCTIONALITY", "ADD ANIMATIONS", "ADD COMPLEX FUNCTIONALITY", "SIMULTANEOUS TESTING"],
+    functionality: ["AUTHENTIFICATION", "CLOUD STORAGE", 'RESPONSIVE LAYOUT', 'ENGAGING USER EXPERIENCE', "CRUD FUNCTIONALITY", 'UNIQUE LOOK'],
+    performance: ["TTFB: 79ms", "ONLOAD TIME: 159ms", "FCP: 180ms", "LCP: 180ms", "TTI: 180ms", "FLT: 594ms"],
+    concepts: ["AUTHENTIFICATION SYSTEM DESIGN", "STORAGE SYSTEM DESIGN", "FORM ACCESSIBLE DESIGN", "CUSTOMIZING SCROLLBARS AND CARETS", "MINFYING ASSETS", "CHECBOX STYLING",],
+    graphic: "pixel-notes" 
   },
+  {
+    bgColor: "#fed400",
+    elementColor: "#262522",
+    completed: "AUGUST 2023",
+    type: "PERSONAL",
+    role: "FULLSTACK - ASSET DESIGNER",
+    client: " --- ",
+    description: "WORKING MODEL OF A SIMPLE TODO APP USING PIXEL ART GRAPHICS INSTEAD OF NORMAL CSS STYLING TO ACHIEVE A UNIQUE LOOK.",
 
-  {
-    bgColor: "#101315",
-    elementColor: "#2ae3af",
-    completed: "JULY 2020",
-    type: "AGENCY AD",
-    role: "FRONTEND ",
-    client: "HISUCCESS",
-  },
+    // DETAILS
 
-  {
-    bgColor: "#283535",
-    elementColor: "#ade24b",
-    completed: "JANUARY 1887",
-    type: "WANTED",
-    role: "GUNSLINGER",
-    client: "BARKEEPER",
+    title: "PIXEL NOTES",
+    timespan: "3 DAYS",
+    tools: "REACT - ASEPRITE - FIGMA",
+    livesite: "https://pixel-notes.vercel.app/",
+    ideas: ["STRESS BUTTON", "PIXELART ANIMATIONS", "NOTIFICATIONS", "THEMES", "EDITABLE", "CUSTOMIZABLE"],
+    goals: ["ACHIEVE A PIXEL ART AESTHETIC IN A REACT APP WITHOUT WEBGL", "MAKE A PROJECT"],
+    execution: ["DESIGN THE LAYOUT IN FIGMA", "CREATE THE ASSETS IN ASEPRITE", "ESTABLISH THE LAYOUT IN REACT", "ADD FUNCTIONALITY", "ADD ANIMATIONS", "ADD COMPLEX FUNCTIONALITY", "SIMULTANEOUS TESTING"],
+    functionality: ["AUTHENTIFICATION", "CLOUD STORAGE", 'RESPONSIVE LAYOUT', 'ENGAGING USER EXPERIENCE', "CRUD FUNCTIONALITY", 'UNIQUE LOOK'],
+    performance: ["TTFB: 79ms", "ONLOAD TIME: 159ms", "FCP: 180ms", "LCP: 180ms", "TTI: 180ms", "FLT: 594ms"],
+    concepts: ["CHECBOX STYLING", "AUTHENTIFICATION SYSTEM DESIGN", "STORAGE SYSTEM DESIGN", "FORM ACCESSIBLE DESIGN", "CUSTOMIZING SCROLLBARS AND CARETS", "MINFYING ASSETS"],
+    graphic: 'to be added later'
   },
   {
-    bgColor: "#04f351",
-    elementColor: "#112d2f",
-    completed: "FEBRUARY 2018",
-    type: "AI HUNT",
-    role: "FORCE OF GOD",
-    client: "AI. KALINDA",
+    bgColor: "#fbe999",
+    elementColor: "#8c0002",
+    completed: "AUGUST 2023",
+    type: "PERSONAL",
+    role: "FULLSTACK - ASSET DESIGNER",
+    client: " --- ",
+    description: "WORKING MODEL OF A SIMPLE TODO APP USING PIXEL ART GRAPHICS INSTEAD OF NORMAL CSS STYLING TO ACHIEVE A UNIQUE LOOK.",
+
+    // DETAILS
+
+    title: "PIXEL NOTES",
+    timespan: "3 DAYS",
+    tools: "REACT - ASEPRITE - FIGMA",
+    livesite: "https://pixel-notes.vercel.app/",
+    ideas: ["STRESS BUTTON", "PIXELART ANIMATIONS", "NOTIFICATIONS", "THEMES", "EDITABLE", "CUSTOMIZABLE"],
+    goals: ["ACHIEVE A PIXEL ART AESTHETIC IN A REACT APP WITHOUT WEBGL", "MAKE A PROJECT"],
+    execution: ["DESIGN THE LAYOUT IN FIGMA", "CREATE THE ASSETS IN ASEPRITE", "ESTABLISH THE LAYOUT IN REACT", "ADD FUNCTIONALITY", "ADD ANIMATIONS", "ADD COMPLEX FUNCTIONALITY", "SIMULTANEOUS TESTING"],
+    functionality: ["AUTHENTIFICATION", "CLOUD STORAGE", 'RESPONSIVE LAYOUT', 'ENGAGING USER EXPERIENCE', "CRUD FUNCTIONALITY", 'UNIQUE LOOK'],
+    performance: ["TTFB: 79ms", "ONLOAD TIME: 159ms", "FCP: 180ms", "LCP: 180ms", "TTI: 180ms", "FLT: 594ms"],
+    concepts: ["CHECBOX STYLING", "AUTHENTIFICATION SYSTEM DESIGN", "STORAGE SYSTEM DESIGN", "FORM ACCESSIBLE DESIGN", "CUSTOMIZING SCROLLBARS AND CARETS", "MINFYING ASSETS"],
+    graphic: 'to be added later'
   },
   {
-    bgColor: "#283535",
-    elementColor: "#ade24b",
-    completed: "JANUARY 1887",
-    type: "WANTED",
-    role: "GUNSLINGER",
-    client: "BARKEEPER",
+    bgColor: "#77394e",
+    elementColor: "#19ddd6",
+    completed: "AUGUST 2023",
+    type: "PERSONAL",
+    role: "FULLSTACK - ASSET DESIGNER",
+    client: " --- ",
+    description: "WORKING MODEL OF A SIMPLE TODO APP USING PIXEL ART GRAPHICS INSTEAD OF NORMAL CSS STYLING TO ACHIEVE A UNIQUE LOOK.",
+
+    // DETAILS
+
+    title: "PIXEL NOTES",
+    timespan: "3 DAYS",
+    tools: "REACT - ASEPRITE - FIGMA",
+    livesite: "https://pixel-notes.vercel.app/",
+    ideas: ["STRESS BUTTON", "PIXELART ANIMATIONS", "NOTIFICATIONS", "THEMES", "EDITABLE", "CUSTOMIZABLE"],
+    goals: ["ACHIEVE A PIXEL ART AESTHETIC IN A REACT APP WITHOUT WEBGL", "MAKE A PROJECT"],
+    execution: ["DESIGN THE LAYOUT IN FIGMA", "CREATE THE ASSETS IN ASEPRITE", "ESTABLISH THE LAYOUT IN REACT", "ADD FUNCTIONALITY", "ADD ANIMATIONS", "ADD COMPLEX FUNCTIONALITY", "SIMULTANEOUS TESTING"],
+    functionality: ["AUTHENTIFICATION", "CLOUD STORAGE", 'RESPONSIVE LAYOUT', 'ENGAGING USER EXPERIENCE', "CRUD FUNCTIONALITY", 'UNIQUE LOOK'],
+    performance: ["TTFB: 79ms", "ONLOAD TIME: 159ms", "FCP: 180ms", "LCP: 180ms", "TTI: 180ms", "FLT: 594ms"],
+    concepts: ["CHECBOX STYLING", "AUTHENTIFICATION SYSTEM DESIGN", "STORAGE SYSTEM DESIGN", "FORM ACCESSIBLE DESIGN", "CUSTOMIZING SCROLLBARS AND CARETS", "MINFYING ASSETS"],
+    graphic: 'to be added later'
   },
   {
-    bgColor: "#283535",
-    elementColor: "#ade24b",
-    completed: "JANUARY 1887",
-    type: "WANTED",
-    role: "GUNSLINGER",
-    client: "BARKEEPER",
+    bgColor: "#bbe7fa",
+    elementColor: "#32343b",
+    completed: "AUGUST 2023",
+    type: "PERSONAL",
+    role: "FULLSTACK - ASSET DESIGNER",
+    client: " --- ",
+    description: "WORKING MODEL OF A SIMPLE TODO APP USING PIXEL ART GRAPHICS INSTEAD OF NORMAL CSS STYLING TO ACHIEVE A UNIQUE LOOK.",
+
+    // DETAILS
+
+    title: "PIXEL NOTES",
+    timespan: "3 DAYS",
+    tools: "REACT - ASEPRITE - FIGMA",
+    livesite: "https://pixel-notes.vercel.app/",
+    ideas: ["STRESS BUTTON", "PIXELART ANIMATIONS", "NOTIFICATIONS", "THEMES", "EDITABLE", "CUSTOMIZABLE"],
+    goals: ["ACHIEVE A PIXEL ART AESTHETIC IN A REACT APP WITHOUT WEBGL", "MAKE A PROJECT"],
+    execution: ["DESIGN THE LAYOUT IN FIGMA", "CREATE THE ASSETS IN ASEPRITE", "ESTABLISH THE LAYOUT IN REACT", "ADD FUNCTIONALITY", "ADD ANIMATIONS", "ADD COMPLEX FUNCTIONALITY", "SIMULTANEOUS TESTING"],
+    functionality: ["AUTHENTIFICATION", "CLOUD STORAGE", 'RESPONSIVE LAYOUT', 'ENGAGING USER EXPERIENCE', "CRUD FUNCTIONALITY", 'UNIQUE LOOK'],
+    performance: ["TTFB: 79ms", "ONLOAD TIME: 159ms", "FCP: 180ms", "LCP: 180ms", "TTI: 180ms", "FLT: 594ms"],
+    concepts: ["CHECBOX STYLING", "AUTHENTIFICATION SYSTEM DESIGN", "STORAGE SYSTEM DESIGN", "FORM ACCESSIBLE DESIGN", "CUSTOMIZING SCROLLBARS AND CARETS", "MINFYING ASSETS"],
+    graphic: 'to be added later'
   },
   {
-    bgColor: "#283535",
-    elementColor: "#ade24b",
-    completed: "JANUARY 1887",
-    type: "WANTED",
-    role: "GUNSLINGER",
-    client: "BARKEEPER",
-  },
-  {
-    bgColor: "#283535",
-    elementColor: "#ade24b",
-    completed: "JANUARY 1887",
-    type: "WANTED",
-    role: "GUNSLINGER",
-    client: "BARKEEPER",
-  },
-  {
-    bgColor: "#283535",
-    elementColor: "#ade24b",
-    completed: "JANUARY 1887",
-    type: "WANTED",
-    role: "GUNSLINGER",
-    client: "BARKEEPER",
-  },
-  {
-    bgColor: "#283535",
-    elementColor: "#ade24b",
-    completed: "JANUARY 1887",
-    type: "WANTED",
-    role: "GUNSLINGER",
-    client: "BARKEEPER",
-  },
-  {
-    bgColor: "#283535",
-    elementColor: "#ade24b",
-    completed: "JANUARY 1887",
-    type: "WANTED",
-    role: "GUNSLINGER",
-    client: "BARKEEPER",
-  },
-  {
-    bgColor: "#283535",
-    elementColor: "#ade24b",
-    completed: "JANUARY 1887",
-    type: "WANTED",
-    role: "GUNSLINGER",
-    client: "BARKEEPER",
-  },
-  {
-    bgColor: "#283535",
-    elementColor: "#ade24b",
-    completed: "JANUARY 1887",
-    type: "WANTED",
-    role: "GUNSLINGER",
-    client: "BARKEEPER",
-  },
-  {
-    bgColor: "#283535",
-    elementColor: "#ade24b",
-    completed: "JANUARY 1887",
-    type: "WANTED",
-    role: "GUNSLINGER",
-    client: "BARKEEPER",
+    bgColor: "#fffeff",
+    elementColor: "#dc1a1d",
+    completed: "AUGUST 2023",
+    type: "PERSONAL",
+    role: "FULLSTACK - ASSET DESIGNER",
+    client: " --- ",
+    description: "WORKING MODEL OF A SIMPLE TODO APP USING PIXEL ART GRAPHICS INSTEAD OF NORMAL CSS STYLING TO ACHIEVE A UNIQUE LOOK.",
+
+    // DETAILS
+
+    title: "PIXEL NOTES",
+    timespan: "3 DAYS",
+    tools: "REACT - ASEPRITE - FIGMA",
+    livesite: "https://pixel-notes.vercel.app/",
+    ideas: ["STRESS BUTTON", "PIXELART ANIMATIONS", "NOTIFICATIONS", "THEMES", "EDITABLE", "CUSTOMIZABLE"],
+    goals: ["ACHIEVE A PIXEL ART AESTHETIC IN A REACT APP WITHOUT WEBGL", "MAKE A PROJECT"],
+    execution: ["DESIGN THE LAYOUT IN FIGMA", "CREATE THE ASSETS IN ASEPRITE", "ESTABLISH THE LAYOUT IN REACT", "ADD FUNCTIONALITY", "ADD ANIMATIONS", "ADD COMPLEX FUNCTIONALITY", "SIMULTANEOUS TESTING"],
+    functionality: ["AUTHENTIFICATION", "CLOUD STORAGE", 'RESPONSIVE LAYOUT', 'ENGAGING USER EXPERIENCE', "CRUD FUNCTIONALITY", 'UNIQUE LOOK'],
+    performance: ["TTFB: 79ms", "ONLOAD TIME: 159ms", "FCP: 180ms", "LCP: 180ms", "TTI: 180ms", "FLT: 594ms"],
+    concepts: ["CHECBOX STYLING", "AUTHENTIFICATION SYSTEM DESIGN", "STORAGE SYSTEM DESIGN", "FORM ACCESSIBLE DESIGN", "CUSTOMIZING SCROLLBARS AND CARETS", "MINFYING ASSETS"],
+    graphic: 'to be added later'
   },
 ];
+
+
+
 
 export const Icon = (
 
@@ -165,6 +174,6 @@ export const InstagramIcon = (<svg className="instagram" xmlns="http://www.w3.or
 export const MeIcon = (<svg xmlns="http://www.w3.org/2000/svg" width="24" height="25" viewBox="0 0 24 25"><path d="M16.5 13.5c0 .828-.56 1.5-1.25 1.5s-1.25-.672-1.25-1.5.56-1.5 1.25-1.5 1.25.672 1.25 1.5zm-7.75-1.5c-.69 0-1.25.672-1.25 1.5s.56 1.5 1.25 1.5 1.25-.672 1.25-1.5-.56-1.5-1.25-1.5zm15.25 2.313c0 1.765-.985 3.991-3.139 4.906-2.063 3.295-4.987 5.781-8.861 5.781-3.741 0-6.846-2.562-8.861-5.781-2.154-.916-3.139-3.142-3.139-4.906 0-2.053.754-3.026 1.417-3.489-.39-1.524-1.03-5.146.963-7.409.938-1.065 2.464-1.54 4.12-1.274.719-1.532 3.612-2.141 5.5-2.141 3 0 6.609.641 9.141 3.516 1.969 2.236 1.648 5.741 1.388 7.269.676.446 1.471 1.419 1.471 3.528zm-9.6 4.687h-4.8s.678 1.883 2.4 1.883c1.788 0 2.4-1.883 2.4-1.883zm7.063-6.508c-4.11.393-7.778-3.058-9.073-5.274-.081.809.186 2.557.969 3.355-3.175.064-5.835-1.592-7.46-3.868-.837 1.399-1.242 3.088-1.242 4.775 0 .722-.746 1.208-1.406.914-.14-.063-.436-.101-.671.053-1 .648-.895 4.183 1.553 5.012.224.076.413.228.536.43.655 1.086 1.354 1.98 2.086 2.722.922.633 1.056-1.875 1.667-2.72.686-.949 2.455-1.126 3.578-.322 1.124-.804 2.892-.627 3.578.322.611.846.745 3.354 1.667 2.72.731-.741 1.43-1.636 2.086-2.722.123-.202.313-.354.536-.43 2.363-.8 2.596-4.185 1.596-4.967z" /></svg>)
 
 export const HomeIcon = (<svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" strokeWidth="2" stroke="currentColor" >
-  <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 12l8.954-8.955c.44-.439 1.152-.439 1.591 0L21.75 12M4.5 9.75v10.125c0 .621.504 1.125 1.125 1.125H9.75v-4.875c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125V21h4.125c.621 0 1.125-.504 1.125-1.125V9.75M8.25 21h8.25" />
+  <path strokeLinecap="round" strokeLinejoin="round" d="M2.25 12l8.954-8.955c.44-.439 1.152-.439 1.591 0L21.75 12M4.5 9.75v10.125c0 .621.504 1.125 1.125 1.125H9.75v-4.875c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125V21h4.125c.621 0 1.125-.504 1.125-1.125V9.75M8.25 21h8.25" />
 </svg>
 )

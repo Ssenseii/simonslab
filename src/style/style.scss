@@ -9,15 +9,17 @@
 @import 'base/globals';
 
 // @import 'layout/';
-@import 'layout/about';
 @import 'layout/header';
 @import 'layout/main';
 @import 'layout/footer';
+@import 'layout/details';
 
 // @import 'components/';
 @import 'components/explore';
+@import 'components/list';
 
 // @import 'pages/';
 @import 'pages/app';
+@import 'pages/about';
 
 // @import 'themes/';
