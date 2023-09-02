@@ -1,9 +1,9 @@
 import { useState, } from "react";
 import { motion } from "framer-motion";
 
-import Header from "../layout/Header";
-import Footer from "../layout/Footer";
-import Details from '../layout/Details'
+import Header from "../layout/main/Header";
+import Footer from "../layout/main/Footer";
+import Details from '../layout/main/Details'
 
 import { ElementsData } from "../data";
 
@@ -33,16 +33,17 @@ const Main = ({
   
     return (
       <div
-        
         key={id}
         className={
-          active === id ? "main__track-element-active" : "main__track-element"
+          active === id
+            ? `main__track-element-active animation-${id}-active`
+            : `main__track-element animation-${id}`
         }
         onClick={() => {
           handleData(id);
         }}
       >
-        <img src={`thumbnails/${id}.png`} alt="" />
+        <img src={`assets/graphics/thumbnails/${id}.png`} alt="" />
       </div>
     );
   };

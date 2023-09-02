@@ -27,16 +27,6 @@
       overflow: hidden;
       @include Center;
 
-      img{
-        scale: 1;
-        filter: grayscale(100%);
-        transition: filter 400ms ease-out;
-        
-        &:hover{
-          filter: none;
-          transition: filter 400ms ease-out;
-        }
-      }
 
       &:hover {
         opacity: 0.9;
@@ -54,13 +44,7 @@
         border-radius: 4px;
         overflow: hidden;
         @include Center;
-        
-        
-          img {
-            &:hover{
-              animation: Huefy 5s infinite;
-            }
-          }
+
       }
     }
   }
@@ -86,13 +70,81 @@
         width: 15vmin;
         height: 30vmin;
 
+        img {
+          scale: 0.4;
+          filter: grayscale(100%);
+          transition: filter 400ms linear;
+
+          &:hover {
+            filter: none;
+            transition: filter 400ms linear;
+          }
+        }
+
         &-active {
           height: 30vmin;
           width: 15vmin;
           border: 1px solid var(--color);
           opacity: 1;
           transition: width 1s, height 1s, opacity 1s ease;
+
+          img {
+            scale: 0.4;
+            filter: grayscale(100%);
+            transition: filter 400ms linear;
+
+            &:hover {
+              filter: none;
+              transition: filter 400ms linear;
+            }
+          }
         }
+      }
+    }
+  }
+}
+
+/// individual animations
+
+.animation-0 {
+  img {
+    scale: 1;
+    filter: grayscale(100%);
+    transition: filter 400ms linear;
+
+    &:hover {
+      filter: none;
+      transition: filter 400ms linear;
+    }
+  }
+
+  &-active {
+    img {
+      &:hover {
+        animation: Huefy 5s infinite;
+      }
+    }
+  }
+}
+
+
+.animation-1 {
+  img {
+    scale: 0.5;
+    transition: all 400ms linear;
+    
+    &:hover {
+      filter: none;
+      transition: all 400ms linear;
+    }
+  }
+  
+  &-active {
+    img {
+      transition: all 400ms linear;
+      
+      &:hover{
+        animation: threed 2s infinite;
       }
     }
   }

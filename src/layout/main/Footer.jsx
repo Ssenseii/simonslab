@@ -1,6 +1,6 @@
 import  {motion, AnimatePresence} from 'framer-motion'
-import { GithubIcon, TwitterIcon, InstagramIcon, Icon } from "../data";
-import Explore from '../components/Explore';
+import { GithubIcon, TwitterIcon, InstagramIcon, Icon } from "../../data";
+import Explore from '../../components/Explore';
 
 
 

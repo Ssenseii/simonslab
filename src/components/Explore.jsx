@@ -1,6 +1,7 @@
 import { motion } from "framer-motion";
 
 const Explore = ({ completed, type, role, client, description }) => {
+  
   const listItem = (word, p) => {
     let delayCount = p / 10;
 
@@ -46,7 +47,7 @@ const Explore = ({ completed, type, role, client, description }) => {
           animate={{ opacity: 1, rotateX: 0 }}
           exit={{ opacity: 0, rotateX: -90 }}
           transition={{ duration: 0.5 }}
-          href="/"
+          href="#details"
         >
           EXPLORE
         </motion.a>
@@ -78,9 +79,9 @@ const Explore = ({ completed, type, role, client, description }) => {
 
       <div className="explore__description">
         <motion.p
-          initial={{ opacity: 0, rotateX: 90 }}
-          animate={{ opacity: 1, rotateX: 0 }}
-          exit={{ opacity: 0, rotateX: -90 }}
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          exit={{ opacity: 0 }}
           transition={{ duration: 1 }}
         >
           {description}

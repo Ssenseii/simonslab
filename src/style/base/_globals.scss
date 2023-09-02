@@ -4,6 +4,7 @@
 html {
   box-sizing: border-box;
   font-size: 100%;
+  scroll-behavior: smooth;
 }
 
 *,
@@ -13,7 +14,9 @@ html {
   padding: 0;
   box-sizing: inherit;
   font-family: 'Vazirmatn', sans-serif;
+  text-transform: uppercase;
 }
+
 
 a {
   text-decoration: none;
@@ -22,17 +25,13 @@ a {
   color: var(--color);
 }
 
-p {
-  font-size: 12px;
-  font-weight: 600;
-  color: var(--color);
-}
-
+p,
 li {
   font-size: 12px;
   font-weight: 600;
   color: var(--color);
 }
+
 
 ul {
   list-style-type: none;

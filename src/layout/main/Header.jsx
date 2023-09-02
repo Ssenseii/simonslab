@@ -1,5 +1,5 @@
 import {motion} from 'framer-motion'
-import { MeIcon, ElementsData } from '../data';
+import { MeIcon, ElementsData } from '../../data';
 
 const Header = ({ handleSlider, active, handleAbout }) => {
   

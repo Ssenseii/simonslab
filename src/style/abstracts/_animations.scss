@@ -25,3 +25,16 @@
     filter: hue-rotate(0deg);
   }
 }
+
+
+@keyframes threed{
+  from{
+    filter: none
+  }
+  50% {
+    filter: drop-shadow(2px 2px 16px var(--color))
+  }
+  to{
+    filter: none;
+  }
+}

@@ -1,9 +1,8 @@
 .details {
   height: 100vh;
-  overflow: hidden;
-
+  scroll-behavior: smooth;
   padding: 1rem;
-
+  padding-top: 8rem;
   display: flex;
   flex-direction: row;
 
@@ -15,6 +14,8 @@
 
     &-title {
       font-size: 125px;
+      line-height: 125px;
+      letter-spacing: 2px;
     }
 
     &-meta {
@@ -51,4 +52,93 @@
     }
   }
 
+  &__graphic {
+    width: 50%;
+
+    @include Center;
+
+    img {
+      width: 70%;
+    }
+  }
+
+}
+
+
+@media screen and (max-width: 1024px) {
+  .details {
+    height: fit-content;
+    flex-direction: column;
+
+    &__info {
+      width: 100%;
+
+      &-title {
+        font-size: 64px;
+        line-height: 64px;
+        letter-spacing: 0px;
+        margin-bottom: 1rem;
+      }
+
+      &-meta {
+
+        display: flex;
+        flex-direction: row;
+        gap: 1rem;
+
+        &-description {
+          width: 66ch;
+        }
+      }
+
+      &-data {
+        display: grid;
+        padding: 0rem;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+        gap: 4vmin;
+        row-gap: 10vmin;
+      }
+    }
+
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .details {
+    height: fit-content;
+    flex-direction: column;
+
+    &__info {
+      width: 100%;
+
+      &-title {
+        font-size: 64px;
+        line-height: 64px;
+        letter-spacing: 0px;
+        margin-bottom: 1rem;
+      }
+
+      &-meta {
+
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+
+        &-description {
+          width: 48ch;
+        }
+      }
+
+      &-data {
+        display: grid;
+        padding: 0rem;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+        gap: 4vmin;
+        row-gap: 10vmin;
+      }
+    }
+
+  }
 }

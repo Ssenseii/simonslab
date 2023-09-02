@@ -1,5 +1,5 @@
 import React from "react";
-import List from "../components/List";
+import List from "../../components/List";
 
 const Details = ({
   title,
@@ -13,13 +13,13 @@ const Details = ({
   functionality,
   concepts,
   performance,
-  
+  graphic
 }) => {
 
 
 
   return (
-    <section className="details">
+    <section id="details" className="details">
       <div className="details__info">
         <h1 className="details__info-title">{title}</h1>
         <div className="details__info-meta">
@@ -52,7 +52,9 @@ const Details = ({
           <List title="CONCEPTS LEARNED" list={concepts}></List>
         </div>
       </div>
-      <div className="details__graphic"></div>
+      <div className="details__graphic">
+        <img src={`assets/graphics/details/${graphic}.png`} alt="graphic_website" />
+      </div>
     </section>
   );
 };
