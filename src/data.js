@@ -21,7 +21,7 @@ export const ElementsData = [
     functionality: ["AUTHENTIFICATION", "CLOUD STORAGE", 'RESPONSIVE LAYOUT', 'ENGAGING USER EXPERIENCE', "CRUD FUNCTIONALITY", 'UNIQUE LOOK'],
     performance: ["TTFB: 79ms", "ONLOAD TIME: 159ms", "FCP: 180ms", "LCP: 180ms", "TTI: 180ms", "FLT: 594ms"],
     concepts: ["AUTHENTIFICATION SYSTEM DESIGN", "STORAGE SYSTEM DESIGN", "FORM ACCESSIBLE DESIGN", "CUSTOMIZING SCROLLBARS AND CARETS", "MINFYING ASSETS", "CHECBOX STYLING",],
-    graphic: "0" 
+    graphic: "0"
   },
   {
     bgColor: "#C5C6C0",
@@ -46,7 +46,53 @@ export const ElementsData = [
     concepts: ["CONDITIONAL RENDERING", "MOBILE TOUCH FUNCTIONS", "MOBILE ACCESSIBLE DESIGN", "DYNAMIC BEHAVIOUR", "BUG FIXING", "MINFYING ASSETS"],
     graphic: '1'
   },
-  
+  {
+    bgColor: "#030205",
+    elementColor: "#60dc87",
+    completed: "January 2023",
+    type: "COMMERCIAL",
+    role: "Designer",
+    client: "AUKcon",
+    description: "Slide for the 2023 Anime UK convention website containing information and links to a small (at the time) manga title called 'DANDANDAN'",
+
+    // DETAILS
+
+    title: "DANDADAN",
+    timespan: "24 Hours",
+    tools: "Illustrator - FIGMA",
+    livesite: "https://github.com/ssenseii",
+    ideas: ["Black and White", "Merged Panels", "Easy to Understand", "Textures and Effects", "Compatible with other slides", "Direct Link to Shonen Jump"],
+    goals: ["Display the identity of DANDADAN", "Illustrator Involvement"],
+    execution: ["Explore the manga for panels", "Cut out the right parts", "Layer and edit", "ADD functionality to the site", "merge with the original website", "minify the images"],
+    functionality: ["Main Button Directing to shonen jump's info", "buttons for scrollview", 'RESPONSIVE LAYOUT', 'unique design'],
+    performance: ["TTFB: xxxms", "ONLOAD TIME: xxxms", "FCP: xxxms", "LCP: xxxms", "TTI: xxxms", "FLT: xxxms"],
+    concepts: ["Working with illustrator", "Working with shades", "Working amongs a group of people", "out-of-bound design", "understanding the client's needs"],
+    graphic: '2'
+  },
+  {
+    bgColor: "#fafbfd",
+    elementColor: "#2d2621",
+    completed: "October 2022",
+    type: "PERSONAL",
+    role: "Frontend Developer",
+    client: "INKTOBER",
+    description: "Website for the inktober 2022 challenge, holding the entire gallery of ink art created on a daily basis by yours truly",
+
+    // DETAILS
+
+    title: "INKTOBER 2022",
+    timespan: "2 Days",
+    tools: "Illustrator - VANILLA JS - Stripe",
+    livesite: "https://github.com/ssenseii",
+    ideas: ["Textured", "Human TOuch", "Clear Style", "Japanese Inspired style"],
+    goals: ["Inclusion of japanese ink design"],
+    execution: ["Easy to fill with art", "Use Illustrator to create assets", "Write the main page script", "Routing", "add stripe functionality for daily upload"],
+    functionality: ["Backend Dashboard with stripe", "unique Visuals", 'Very Accessible', 'Dark Mode'],
+    performance: ["TTFB: xxxms", "ONLOAD TIME: xxxms", "FCP: xxxms", "LCP: xxxms", "TTI: xxxms", "FLT: xxxms"],
+    concepts: ["Working with illustrator", "Working with brushes", "Backend Experimentation", "CSS magic of background images", "fast & easy upload"],
+    graphic: '3'
+  },
+
 ];
 
 

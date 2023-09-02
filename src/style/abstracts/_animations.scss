@@ -38,3 +38,27 @@
     filter: none;
   }
 }
+
+
+@keyframes inverting{
+  from{
+    filter: none;
+  }
+
+  
+
+  45%{
+    filter: none;
+  }
+  50%{
+    filter: invert(70%);
+  }
+  
+  55%{
+    filter: none;
+  }
+
+  to{
+    filter: none;
+  }
+}

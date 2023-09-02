@@ -71,6 +71,7 @@
         height: 30vmin;
 
         img {
+          width: 200%;
           scale: 0.4;
           filter: grayscale(100%);
           transition: filter 400ms linear;
@@ -89,7 +90,7 @@
           transition: width 1s, height 1s, opacity 1s ease;
 
           img {
-            scale: 0.4;
+            width: 200%;
             filter: grayscale(100%);
             transition: filter 400ms linear;
 
@@ -146,6 +147,51 @@
       &:hover{
         animation: threed 2s infinite;
       }
+    }
+  }
+}
+
+
+.animation-2 {
+  img {
+    scale: 1;
+    transform: translateX(10rem);
+    transition: all 400ms linear;
+    
+    &:hover {
+      filter: none;
+      transition: all 400ms linear;
+    }
+  }
+  
+  &-active {
+    img {
+      transition: all 400ms linear;
+      
+      &:hover{
+        animation: inverting 5s infinite;
+      }
+    }
+  }
+}
+
+.animation-3 {
+  img {
+    scale: 0.8;
+    transform: translateX(30%);
+    transition: all 400ms linear;
+    filter: invert(75%);
+    
+    &:hover {
+      filter: invert(75%);
+      transition: all 400ms linear;
+    }
+  }
+  
+  &-active {
+    img {
+      scale: 0.5;
+      transition: all 400ms linear;
     }
   }
 }

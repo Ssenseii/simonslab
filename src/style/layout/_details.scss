@@ -56,9 +56,12 @@
     width: 50%;
 
     @include Center;
+    overflow: hidden;
 
     img {
-      width: 70%;
+      width: 80%;
+
+      border-radius: 1rem;
     }
   }
 
@@ -101,6 +104,9 @@
       }
     }
 
+    &__graphic {
+      display: none;
+    }
   }
 }
 
@@ -138,6 +144,10 @@
         gap: 4vmin;
         row-gap: 10vmin;
       }
+    }
+
+    &__graphic {
+      display: none;
     }
 
   }
