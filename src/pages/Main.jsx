@@ -1,9 +1,9 @@
-import { useState, } from "react";
+import { useState } from "react";
 import { motion } from "framer-motion";
 
 import Header from "../layout/main/Header";
 import Footer from "../layout/main/Footer";
-import Details from '../layout/main/Details'
+import Details from "../layout/main/Details";
 
 import { ElementsData } from "../data";
 
@@ -14,23 +14,12 @@ const Main = ({
   setActive,
   setData,
   setIsVisible,
-  handleAbout,
 }) => {
-
   const [details, setDetails] = useState(false);
 
 
-  /// useEffect Area
-
-
-  /// Constants Area
 
   const MainElement = (id) => {
-
-    // ways to work around background 
-      // #1 style={{ backgroundImage: "url(" + image0 + ")" }}
-      // img tag 
-  
     return (
       <div
         key={id}
@@ -48,7 +37,8 @@ const Main = ({
     );
   };
 
-  /// handleFunction Area
+
+  
   const handleData = (id) => {
     switch (true) {
       case active === id:
@@ -62,7 +52,7 @@ const Main = ({
           type: " ",
           role: " ",
           client: " ",
-          description: ' ',
+          description: " ",
         });
         break;
 
@@ -97,15 +87,24 @@ const Main = ({
     }
   };
 
-  
+  const handleActive = () => {
+    setActive();
+    setIsVisible(false);
+    setDetails(false);
+    setData({
+      elementColor: "#bac4b8",
+      bgColor: "#141414",
+      completed: " ",
+      type: " ",
+      role: " ",
+      client: " ",
+      description: " ",
+    });
+  }
 
   return (
     <>
-      <Header
-        handleSlider={handleData}
-        active={active}
-        handleAbout={handleAbout}
-      />
+      <Header logo={"SIMONSLAB"} EngageSlider={true} LinkTo={"about"} handleSlider={handleData} active={active} handleActive={handleActive} />
 
       <motion.section
         initial={{ opacity: 0, translateX: 500 }}
@@ -115,39 +114,15 @@ const Main = ({
         className="main"
       >
         <div className="main__track">
-          {ElementsData.map((element, i) => {
+          {ElementsData.map((_, i) => {
             return MainElement(i);
           })}
         </div>
       </motion.section>
 
-      <Footer
-        completed={data.completed}
-        type={data.type}
-        role={data.role}
-        client={data.client}
-        isVisible={isVisible}
-        description={data.description}
-      />
+      <Footer data={data} isVisible={isVisible} />
 
-      {details ? (
-        <Details
-          title={data.title}
-          description={data.description}
-          timespan={data.timespan}
-          tools={data.tools}
-          livesite={data.livesite}
-          ideas={data.ideas}
-          goals={data.goals}
-          execution={data.execution}
-          functionality={data.functionality}
-          concepts={data.concepts}
-          performance={data.performance}
-          graphic={data.graphic}
-        />
-      ) : (
-        ""
-      )}
+      {details ? <Details data={data} /> : ""}
     </>
   );
 };

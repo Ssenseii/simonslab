@@ -1,7 +1,7 @@
 import { motion } from "framer-motion";
 import { Icon } from "../../data";
 import List from "../../components/List";
-
+import Branches from "../../components/Branches";
 
 const Lists = () => {
   return (
@@ -17,15 +17,13 @@ const Lists = () => {
           title="INTERESTS"
           list={["BOOKS", "2000s MOVIES", "PIXEL ART", "3D LOW POLY GRAPHICS"]}
         ></List>
-        <List
-          title="BRANCHES"
-          list={[
-            "SIMONSBLOG",
-            "SIMONSINFINITY",
-            "SIMONSGALLERY",
-            "SIMONSTOOLS",
-          ]}
-        ></List>
+
+        {/* Navigation */}
+
+        <Branches list={["Simonslab","Simonsblog", "simonsprojects", "simonsdocs"]}/>
+        
+        {/* Navigation */}
+        
         <List
           title="CLIENTS"
           list={["ARCHIDESK", "HISUCCESS", "LAPIN", "HYUGA. INC"]}

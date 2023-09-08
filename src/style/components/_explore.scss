@@ -5,6 +5,8 @@
   align-items: flex-end;
   scroll-behavior: smooth;
 
+
+
   width: 50%;
   height: 100%;
   padding: 8px;
@@ -122,6 +124,8 @@
 @media screen and (max-width: 1300px) {
   .explore {
 
+    padding: 0;
+
     &__list {
       width: 100%;
       align-self: center;
@@ -153,7 +157,7 @@
 
 
 @media screen and (max-width: 768px) {
-  .explore{
+  .explore {
     display: none;
   }
 }

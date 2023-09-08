@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 
-const Explore = ({ completed, type, role, client, description }) => {
+const Explore = ({ data }) => {
   
   const listItem = (word, p) => {
     let delayCount = p / 10;
@@ -34,10 +34,10 @@ const Explore = ({ completed, type, role, client, description }) => {
           {listItem("CLIENT", 4)}
         </ul>
         <ul className="explore__list-data">
-          {listItem(completed, 1)}
-          {listItem(type, 2)}
-          {listItem(role, 3)}
-          {listItem(client, 4)}
+          {listItem(data.completed, 1)}
+          {listItem(data.type, 2)}
+          {listItem(data.role, 3)}
+          {listItem(data.client, 4)}
         </ul>
       </div>
 
@@ -84,7 +84,7 @@ const Explore = ({ completed, type, role, client, description }) => {
           exit={{ opacity: 0 }}
           transition={{ duration: 1 }}
         >
-          {description}
+          {data.description}
         </motion.p>
       </div>
     </div>

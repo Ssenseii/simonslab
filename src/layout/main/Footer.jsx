@@ -1,10 +1,8 @@
-import  {motion, AnimatePresence} from 'framer-motion'
+import { motion, AnimatePresence } from "framer-motion";
 import { GithubIcon, TwitterIcon, InstagramIcon, Icon } from "../../data";
-import Explore from '../../components/Explore';
+import Explore from "../../components/Explore";
 
-
-
-const Footer = ({ completed, type, role, client, description, isVisible }) => {
+const Footer = ({ data, isVisible }) => {
   return (
     <motion.footer
       initial={{ opacity: 0 }}
@@ -18,17 +16,7 @@ const Footer = ({ completed, type, role, client, description, isVisible }) => {
         {Icon}
       </div>
 
-      <AnimatePresence>
-        {isVisible && (
-          <Explore
-            completed={completed}
-            type={type}
-            role={role}
-            client={client}
-            description={description}
-          />
-        )}
-      </AnimatePresence>
+      <AnimatePresence>{isVisible && <Explore data={data} />}</AnimatePresence>
 
       <div className="footer__social">
         <ul>

@@ -1,12 +1,16 @@
 import { useState, useEffect } from "react";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 /// Pages
 import Main from "./pages/Main";
 import About from "./pages/About";
 
+/// branches
+import Blog from "./pages/Branches/Blog";
+import Projects from "./pages/Branches/Projects";
+import Docs from "./pages/Branches/Docs";
+
 function App() {
-  /// useState Area
-  const [screen, setScreen] = useState(true); /// switch between about and main (should consider route option)
 
   const [isVisible, setIsVisible] = useState(false);
   const [active, setActive] = useState(); /// keep track of id and checks clicked element
@@ -32,23 +36,9 @@ function App() {
     graphic: " ",
   });
 
-  const handleAbout = () => {
-    setScreen((prev) => !prev);
-    setActive();
-    setIsVisible(false);
-    setData({
-      elementColor: "#bac4b8",
-      bgColor: "#141414",
-      completed: " ",
-      type: " ",
-      role: " ",
-      client: " ",
-      description: " ",
-    });
-  };
-
+  /// Change font color by changing the css variable (has to be on top level component 'app')
   useEffect(() => {
-    document.documentElement.style.setProperty("--color", data.elementColor);
+    document.documentElement.style.setProperty("--color", data.elementColor); /// to change element besides the font
     return () => {};
   }, [data]);
 
@@ -57,24 +47,41 @@ function App() {
       className="app"
       style={{ color: data.elementColor, backgroundColor: data.bgColor }}
     >
-      {screen ? (
-        <Main
-          active={active}
-          setActive={setActive}
-          data={data}
-          setData={setData}
-          isVisible={isVisible}
-          setIsVisible={setIsVisible}
-          handleAbout={handleAbout}
-        ></Main>
-      ) : (
-        <About handleAbout={handleAbout}></About>
-      )}
+      <BrowserRouter>
+        <Routes>
+
+          {/* Main Route */}
+          <Route
+            exact
+            path="/"
+            element={
+              <Main
+                active={active}
+                setActive={setActive}
+                data={data}
+                setData={setData}
+                isVisible={isVisible}
+                setIsVisible={setIsVisible}
+              />
+            }
+          ></Route>
+
+          {/* About Route */}
+          <Route path="/about" element={<About />}></Route>
+          {/* Branches Go Here */}
+          <Route path="/blog" element={<Blog />}></Route>
+          <Route path="/projects" element={<Projects />}></Route>
+          <Route path="/docs" element={<Docs />}></Route>
+        </Routes>
+      </BrowserRouter>
     </div>
   );
 }
 
 export default App;
+
+
+// Unused Cool Functions
 
 // const newShade = (hexColor, magnitude) => {
 //   hexColor = hexColor.replace(`#`, ``);
@@ -94,3 +101,4 @@ export default App;
 //     return hexColor;
 //   }
 // };
+

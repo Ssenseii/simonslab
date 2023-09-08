@@ -1,11 +1,10 @@
 import {motion} from 'framer-motion'
 import {HomeIcon } from "../../data";
+import {Link} from 'react-router-dom'
 
-const Header = ({ handleAbout }) => {
-  /// Toggle About
-  const handleToggleAbout = () => {
-    handleAbout();
-  };
+const Header = () => {
+
+  
   return (
     <motion.div
       initial={{ opacity: 0 }}
@@ -22,10 +21,12 @@ const Header = ({ handleAbout }) => {
         </p>
       </div>
       <div className="about__header-close">
-        <p onClick={handleToggleAbout}>CLOSE</p>
-        <div onClick={handleToggleAbout} className="meIcon">
+        <Link to="/">
+        <p>CLOSE</p>
+        <div className="meIcon">
           {HomeIcon}
         </div>
+        </Link>
         <div className="about__header-close-underline"></div>
       </div>
     </motion.div>

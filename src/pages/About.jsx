@@ -5,7 +5,7 @@ import Header from "../layout/about/Header";
 import Lists from "../layout/about/Lists";
 import Extras from "../layout/about/Extras";
 
-const About = ({ handleAbout }) => {
+const About = () => {
   return (
     <motion.section
       initial={{ opacity: 0 }}
@@ -13,7 +13,7 @@ const About = ({ handleAbout }) => {
       exit={{ opacity: 0, transition: { duration: 0.5, ease: "easeOut" } }}
       className="about"
     >
-      <Header handleAbout={handleAbout} />
+      <Header />
 
       <Lists />
 
