@@ -1,5 +1,6 @@
 .docs {
 
+  scroll-behavior: smooth;
   &__intro {
     height: 70vh;
     border-bottom: 8px solid var(--color);
@@ -24,6 +25,7 @@
     p {
       width: 66ch;
       font-size: 16px;
+      margin-left: 4rem;
     }
   }
 
@@ -33,8 +35,6 @@
     height: 100vh;
 
     padding: 1rem;
-
-    overflow: hidden;
 
     &-navigation {
       padding: 1rem;
@@ -63,6 +63,63 @@
     &-instructions {
       padding-block: 2rem;
       padding-inline: 4rem;
+
+      .instruction{
+        &__h1{
+          font-size: 64px;
+          margin-bottom: 1rem;
+          margin-top: 2rem;
+        }
+        
+        &__h2{
+          font-size: 24px;
+          margin-bottom: 1rem;
+          margin-top: 3rem;
+        }
+
+        &__h3{
+          margin-left: 2rem;
+          margin-bottom: 1rem;
+        }
+
+        &__paragraph{
+          width: 100%;
+          text-align: justify;
+          margin-bottom: 1rem;
+        }
+
+        &__list, &__ordered{
+          margin-left: 1rem;
+          margin-bottom: 1rem;
+        }
+
+        &__ordered{
+          &-li{
+            margin: 1rem;
+          }
+        }
+        
+
+        &__code{
+          border: 1px solid #ccc;
+          border-radius: 8px;
+          background-color: #222;
+          padding: 1rem;
+          margin-bottom: 1rem;
+
+          code{
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            font-size: 12px;
+            text-transform: none;
+          }
+        }
+
+        &__devider{
+          height: 1px;
+          width: 50%;
+          border: 1px dashed var(--color);
+        }
+      }
     }
   }
 }
