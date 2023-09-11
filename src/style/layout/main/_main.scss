@@ -195,3 +195,24 @@
     }
   }
 }
+
+.animation-4 {
+  img {
+    scale: 0.05;
+    transition: all 400ms linear;
+    filter: invert(75%);
+    
+    &:hover {
+      filter: invert(75%);
+      transition: all 400ms linear;
+    }
+  }
+  
+  &-active {
+    img {
+      filter: invert(90%);
+      scale: 0.2;
+      transition: all 400ms linear;
+    }
+  }
+}

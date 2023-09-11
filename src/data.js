@@ -92,6 +92,29 @@ export const ElementsData = [
     concepts: ["Working with illustrator", "Working with brushes", "Backend Experimentation", "CSS magic of background images", "fast & easy upload"],
     graphic: '3'
   },
+  {
+    bgColor: "#1f4821",
+    elementColor: "#fff7d9",
+    completed: "September 2023",
+    type: "Personal",
+    role: "FullStack",
+    client: " --- ",
+    description: "In order to make it easy for me to write documentation for SIMONSLAB, I created this 'markdown' editor that takes markdown notation and converts it to the appropriate html tags with the correct css classes",
+
+    // DETAILS
+
+    title: "SIMONSDOCS EDITOR",
+    timespan: "2 days",
+    tools: "Typescript",
+    livesite: "https://ssenseii.github.io/simons-editor-prototype/",
+    ideas: ["Fast Conversion", "Copy to Clipboard", "Glassmorphism", "code mirroring"],
+    goals: ["instant creation of a SIMONSDOCS element using markdown"],
+    execution: ["Define the tags of a SIMONSDOCS element", "Convert them using typescript by mirroring a text area", "Convert typescript to vanilla JS", "add copy to clipboard", "Quality of Life enhancements"],
+    functionality: ["Code Mirroring", "Fast inversion", 'Action Buttons'],
+    performance: ["TTFB: xxxms", "ONLOAD TIME: xxxms", "FCP: xxxms", "LCP: xxxms", "TTI: xxxms", "FLT: xxxms"],
+    concepts: ["Scrollbar styling", "Typescript type unions", "Markdown understanding", "Visitor Pattern", "Chain of Command Pattern"],
+    graphic: '4'
+  },
 
 ];
 
