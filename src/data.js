@@ -115,6 +115,29 @@ export const ElementsData = [
     concepts: ["Scrollbar styling", "Typescript type unions", "Markdown understanding", "Visitor Pattern", "Chain of Command Pattern"],
     graphic: '4'
   },
+  {
+    bgColor: "#60387b",
+    elementColor: "#f9fffc",
+    completed: "july 2022",
+    type: "Commercial",
+    role: "FullStack",
+    client: " HISUCCESS ",
+    description: "Landing page for an agency that specializes in sending students abroad to their dream colleges",
+
+    // DETAILS
+
+    title: "HISUCCESS",
+    timespan: "?? Days",
+    tools: "Vanilla JS",
+    livesite: "https://hisuccess.vercel.app/",
+    ideas: ["Morphic", "Animated", "REsponsive", "Data Focused"],
+    goals: ["Create an online professional presence"],
+    execution: ["Make a design", "build it with vanilla js", "make it responsive", "add functionality", "animate it"],
+    functionality: ["unique backgrounds", "Floating Navigation", 'Connected with social media'],
+    performance: ["TTFB: xxxms", "ONLOAD TIME: xxxms", "FCP: xxxms", "LCP: xxxms", "TTI: xxxms", "FLT: xxxms"],
+    concepts: ["Glassmorphism", "Scroll Behavior", "SVG styling", "responsive navigation"],
+    graphic: '5'
+  },
 
 ];
 

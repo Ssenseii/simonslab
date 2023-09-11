@@ -133,18 +133,18 @@
   img {
     scale: 0.5;
     transition: all 400ms linear;
-    
+
     &:hover {
       filter: none;
       transition: all 400ms linear;
     }
   }
-  
+
   &-active {
     img {
       transition: all 400ms linear;
-      
-      &:hover{
+
+      &:hover {
         animation: threed 2s infinite;
       }
     }
@@ -157,18 +157,18 @@
     scale: 1;
     transform: translateX(10rem);
     transition: all 400ms linear;
-    
+
     &:hover {
       filter: none;
       transition: all 400ms linear;
     }
   }
-  
+
   &-active {
     img {
       transition: all 400ms linear;
-      
-      &:hover{
+
+      &:hover {
         animation: inverting 5s infinite;
       }
     }
@@ -181,13 +181,13 @@
     transform: translateX(30%);
     transition: all 400ms linear;
     filter: invert(75%);
-    
+
     &:hover {
       filter: invert(75%);
       transition: all 400ms linear;
     }
   }
-  
+
   &-active {
     img {
       scale: 0.5;
@@ -201,17 +201,38 @@
     scale: 0.05;
     transition: all 400ms linear;
     filter: invert(75%);
-    
+
     &:hover {
       filter: invert(75%);
       transition: all 400ms linear;
     }
   }
-  
+
   &-active {
     img {
       filter: invert(90%);
       scale: 0.2;
+      transition: all 400ms linear;
+    }
+  }
+}
+
+.animation-5 {
+  img {
+    scale: 0.7;
+    transform: rotateZ(90deg);
+    transition: all 400ms linear;
+    filter: Grayscale(100%);
+
+    &:hover {
+      filter: none;
+      transition: all 400ms linear;
+    }
+  }
+
+  &-active {
+    img {
+      scale: 1;
       transition: all 400ms linear;
     }
   }
