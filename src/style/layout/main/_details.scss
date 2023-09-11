@@ -1,14 +1,12 @@
 .details {
   height: 100vh;
-  scroll-behavior: smooth;
-  padding: 1rem;
-  padding-top: 8rem;
+  padding-block: 2rem;
+  padding-inline: 2rem;
   display: flex;
   flex-direction: row;
 
   &__info {
     width: 50%;
-
     display: flex;
     flex-direction: column;
 
@@ -54,13 +52,13 @@
 
   &__graphic {
     width: 50%;
-
     @include Center;
-    overflow: hidden;
+
+    align-items: flex-end;
 
     img {
-      width: 80%;
-
+      transform: translateX(100px);
+      width: 100%;
       border-radius: 1rem;
     }
   }

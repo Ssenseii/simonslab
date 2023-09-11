@@ -17,6 +17,28 @@ html {
   text-transform: uppercase;
 }
 
+::-webkit-scrollbar {
+  width: 1rem;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #666;
+  border: 2px solid var(--color);
+  border-radius: 4px;
+  margin: 1rem;
+
+  &:hover {
+    background: #888;
+    cursor: pointer;
+  }
+
+}
 
 a {
   text-decoration: none;

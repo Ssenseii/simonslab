@@ -74,7 +74,7 @@ export const ElementsData = [
     elementColor: "#2d2621",
     completed: "October 2022",
     type: "PERSONAL",
-    role: "Frontend Developer",
+    role: "FullStack",
     client: "INKTOBER",
     description: "Website for the inktober 2022 challenge, holding the entire gallery of ink art created on a daily basis by yours truly",
 
